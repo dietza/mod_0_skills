@@ -1,0 +1,20 @@
+instance: our entree, greenCurry
+
+attributes:
+
+title: "Green Curry"
+costUSD: 13.95
+spiceLevel: 3
+ingredients: ["coconut milk", "bamboo shoots", "shrimp", "bell pepper", "yellow squash"]
+numIngredients: 5 (ingredients.length)
+isVegan: false
+
+methods:
+
+removeIngredient([2]); ingredients = ["coconut milk", "bamboo shoots", "bell pepper", "yellow squash"], numIngredients = 4, also isVegan = true
+
+requestIngredient("tofu"); ingredients = ["coconut milk", "bamboo shoots", "bell pepper", "yellow squash", "tofu"], numIngredients = 5, still isVegan = true
+
+orderEntree(); logs "I'd like the Green Curry, please!"
+
+updateSpiceLevel(4); spiceLevel = 4
