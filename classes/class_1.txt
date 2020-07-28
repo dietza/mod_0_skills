@@ -1,0 +1,23 @@
+class: Server
+
+attributes:
+
+serverName ("string"),
+employeeID ("string"),
+daysScheduledThisWeek ([array]),
+tablesServing ([array]),
+numTables (int),
+dailyHours (int / float),
+isWorkingToday (boolean, true || false),
+
+methods: 
+
+callOff (removes the last item from the daysScheduledThisWeek array),
+
+callIn (pass an argument which will be added to the end of daysScheduledThisWeek array, if the argument == "today" updates value of isWorkingToday to true),
+
+addHours (pass an argument which will be added to increase the value of dailyHours),
+
+addTable (pass an argument which will be added to the end of the tablesServing array, increases the value of numTables by 1),
+
+calculateWeeklyHours (multiplies dailyHours by daysScheduledThisWeek.length and prints a return value)
