@@ -1,0 +1,20 @@
+class: Entree
+
+attributes:
+
+title ("string"),
+costUSD (int / float),
+spiceLevel (int),
+ingredients ([array]),
+numIngredients (int),
+isVegan (boolean true || false),
+
+methods:
+
+removeIngredient (pass an argument which will select an item by index number and remove it from the ingredients array, decreases the value of numIngredients by 1),
+
+requestIngredient (pass an argument which will be added to the end of the ingredients array, increases the value of numIngredients by 1),
+
+orderEntree (prints a string reading "I'd like the ${title}, please!"),
+
+updateSpiceLevel (pass an argument which updates the value of spiceLevel)
