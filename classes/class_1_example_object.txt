@@ -1,0 +1,24 @@
+instance: our server, Trevor
+
+attributes:
+
+serverName: "Trevor"
+employeeID: 0472
+daysScheduledThisWeek: ["Thursday", "Friday", "Sunday", "Monday"]
+tablesServing: ["09","10","11","12","13"]
+numTables: 5 (tablesServing.length)
+dailyHours: 6
+isWorkingToday: false
+
+methods:
+
+callOff(); daysScheduledThisWeek = ["Thursday", "Friday", "Sunday"]
+
+callIn("Wednesday"); daysScheduledThisWeek = ["Thursday", "Friday", "Sunday", "Wednesday"], isWorkingToday = false
+callIn("today"); daysScheduledThisWeek = ["Thursday", "Friday", "Sunday", "Wednesday", "today"], isWorkingToday = true
+
+addHours(2); dailyHours = 8
+
+addTable("15"); tablesServing = ["09","10","11","12","13", "15"]
+
+calculateWeeklyHours(); returns 40 (following the methods above)
